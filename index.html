@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Next Level Consulting | Growth Architect</title>
+  <meta name="description" content="Next Level Consulting helps purpose-driven brands grow with 360° strategy across brand, business, and go-to-market. Founded by Maggie McDermott." />
+  <link rel="icon" href="assets/NLC Logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nlc: { navy: '#01456A', teal: '#037F96', cyan: '#00FDFD', orange: '#FE9900' }
+          },
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          animation: { 'marquee': 'marquee 25s linear infinite', 'marquee-reverse': 'marquee-reverse 30s linear infinite' },
+          keyframes: { marquee: { '0%': { transform: 'translateX(0%)' }, '100%': { transform: 'translateX(-100%)' } }, 'marquee-reverse': { '0%': { transform: 'translateX(-100%)' }, '100%': { transform: 'translateX(0%)' } } }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-nlc-navy font-sans antialiased overflow-x-hidden">
+  <nav class="sticky top-0 bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center shrink-0">
+        <img src="assets/NLC Logo.png" alt="Next Level Consulting" class="h-10 w-auto object-contain" />
+      </a>
+      <div class="hidden md:flex items-center gap-10 text-sm font-semibold tracking-tight text-nlc-navy/80">
+        <a href="index.html" class="text-nlc-navy">Home</a>
+        <a href="work.html" class="hover:text-nlc-navy transition">Our Work</a>
+        <a href="services.html" class="hover:text-nlc-navy transition">Services</a>
+        <a href="about.html" class="hover:text-nlc-navy transition">About</a>
+      </div>
+      <a href="https://calendly.com/maggie-nextlevelconsulting/30min" target="_blank" rel="noopener" class="hidden md:inline-flex bg-nlc-orange text-white px-6 py-2 rounded-full font-bold hover:opacity-90 transition">Get Started</a>
+      <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden p-2 rounded-xl border border-gray-100" aria-label="Open menu">
+        <span class="block w-5 h-px bg-nlc-navy mb-1.5"></span>
+        <span class="block w-5 h-px bg-nlc-navy mb-1.5"></span>
+        <span class="block w-5 h-px bg-nlc-navy"></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white/95 backdrop-blur-md">
+      <div class="px-6 py-6 flex flex-col gap-4 font-semibold">
+        <a href="index.html">Home</a>
+        <a href="work.html">Our Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="https://calendly.com/maggie-nextlevelconsulting/30min" target="_blank" rel="noopener" class="bg-nlc-orange text-white px-6 py-2 rounded-full font-bold text-center">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="min-h-[80vh] flex flex-col justify-center items-center text-center px-6 relative overflow-hidden bg-white isolate">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-nlc-cyan/10 rounded-full blur-[100px] animate-pulse pointer-events-none -z-10"></div>
+    <div class="relative max-w-5xl z-10" data-aos="fade-up">
+      <img src="assets/NLC Logo Mark.png" alt="Next Level Consulting" class="h-12 w-auto object-contain mx-auto mb-6" />
+      <h1 class="text-7xl md:text-9xl text-nlc-navy font-extrabold tracking-tighter leading-[0.9]">Growth Architect.</h1>
+      <p class="text-2xl text-nlc-teal mt-4 font-medium">Helping Young Brands to Build Strong Foundations Scale</p>
+      <div class="flex flex-wrap justify-center gap-4 mt-8">
+        <button type="button" onclick="openWhatsAppModal()" class="inline-flex bg-nlc-orange text-white px-8 py-3.5 rounded-full font-bold hover:opacity-90 shadow-[0_0_20px_rgba(254,153,0,0.4)] transition">Get Started</button>
+        <a href="https://calendly.com/maggie-nextlevelconsulting/30min" target="_blank" rel="noopener" class="inline-flex px-8 py-3.5 rounded-full font-bold border border-nlc-navy/20 hover:border-nlc-cyan hover:-translate-y-1 hover:shadow-xl transition-all duration-500">Get Clarity</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-white py-12 overflow-hidden flex border-y border-gray-100" aria-label="Client logos">
+    <div class="flex animate-marquee shrink-0 items-center gap-16 px-10">
+      <img src="assets/C13.svg" alt="Client logo 13" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C11.png" alt="Client logo 11" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C4.png" alt="Client logo 4" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C15.png" alt="Client logo 15" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C2.png" alt="Client logo 2" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C9.png" alt="Client logo 9" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C6.png" alt="Client logo 6" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C14.png" alt="Client logo 14" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C1.png" alt="Client logo 1" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C12.png" alt="Client logo 12" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C7.png" alt="Client logo 7" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C3.png" alt="Client logo 3" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C10.png" alt="Client logo 10" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C5.png" alt="Client logo 5" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C8.png" alt="Client logo 8" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+    </div>
+    <div class="flex animate-marquee shrink-0 items-center gap-16 px-10" aria-hidden="true">
+      <img src="assets/C13.svg" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C11.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C4.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C15.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C2.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C9.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C6.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C14.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C1.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C12.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C7.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C3.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C10.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C5.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="assets/C8.png" alt="" class="h-16 object-contain grayscale hover:grayscale-0 transition" />
+    </div>
+  </section>
+
+  <section class="py-20 bg-gray-50/60 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-12" data-aos="fade-up">
+        <p class="text-xs tracking-[0.3em] uppercase text-nlc-teal font-bold mb-3">Impact in Numbers</p>
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter">Real Results, Measurable Impact</h2>
+        <p class="mt-3 text-nlc-navy/60">Strategic Clarity for Purpose-Driven Growth</p>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:border-nlc-cyan hover:-translate-y-2 hover:shadow-2xl transition-all duration-500" data-aos="fade-up">
+          <p class="text-4xl md:text-5xl font-extrabold tracking-tighter text-nlc-navy">25+</p>
+          <p class="mt-3 text-sm text-nlc-navy/70 leading-relaxed">years of founder/operator collaboration</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:border-nlc-cyan hover:-translate-y-2 hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="60">
+          <p class="text-4xl md:text-5xl font-extrabold tracking-tighter text-nlc-navy">50+</p>
+          <p class="mt-3 text-sm text-nlc-navy/70 leading-relaxed">Purpose-driven brands scaled with clarity.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:border-nlc-cyan hover:-translate-y-2 hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="120">
+          <p class="text-4xl md:text-5xl font-extrabold tracking-tighter text-nlc-navy">$10M+</p>
+          <p class="mt-3 text-sm text-nlc-navy/70 leading-relaxed">Strategy-led revenue growth.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:border-nlc-cyan hover:-translate-y-2 hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="180">
+          <p class="text-4xl md:text-5xl font-extrabold tracking-tighter text-nlc-navy">30%</p>
+          <p class="mt-3 text-sm text-nlc-navy/70 leading-relaxed">Lift in engagement that converts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12" data-aos="fade-up">
+        <div>
+          <p class="text-xs tracking-[0.3em] uppercase text-nlc-teal font-bold mb-3">What we do</p>
+          <h2 class="text-5xl md:text-6xl font-extrabold tracking-tighter text-nlc-navy">360° Solutions</h2>
+        </div>
+        <a href="services.html" class="text-nlc-teal font-bold hover:text-nlc-navy transition">Explore all services →</a>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="services.html" class="bg-white/70 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 hover:border-nlc-cyan hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 group" data-aos="fade-up">
+          <p class="text-nlc-orange font-bold text-sm tracking-widest uppercase mb-4">01</p>
+          <h3 class="text-2xl font-extrabold tracking-tight mb-3">Product Development and Launch Strategy</h3>
+          <p class="text-nlc-navy/70 leading-relaxed">A clear story and identity, aligned to your mission.</p>
+        </a>
+        <a href="services.html" class="bg-white/70 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 hover:border-nlc-cyan hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 group" data-aos="fade-up" data-aos-delay="100">
+          <p class="text-nlc-orange font-bold text-sm tracking-widest uppercase mb-4">02</p>
+          <h3 class="text-2xl font-extrabold tracking-tight mb-3">Brand Anchor and Positioning</h3>
+          <p class="text-nlc-navy/70 leading-relaxed">Insights and campaigns that actually connect.</p>
+        </a>
+        <a href="services.html" class="bg-white/70 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 hover:border-nlc-cyan hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 group" data-aos="fade-up" data-aos-delay="200">
+          <p class="text-nlc-orange font-bold text-sm tracking-widest uppercase mb-4">03</p>
+          <h3 class="text-2xl font-extrabold tracking-tight mb-3">Business Development</h3>
+          <p class="text-nlc-navy/70 leading-relaxed">Partnerships and sales support that move revenue.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-gray-50/60 border-y border-gray-100">
+    <div class="max-w-5xl mx-auto px-6 text-center" data-aos="fade-up">
+      <p class="text-xs tracking-[0.3em] uppercase text-nlc-teal font-bold mb-6">About</p>
+      <p class="text-3xl md:text-5xl font-extrabold tracking-tighter leading-tight text-nlc-navy">From co-founders to strategic partners—we’ve lived the climb of growing a brand with purpose.</p>
+      <a href="about.html" class="inline-flex mt-10 text-nlc-teal font-bold hover:text-nlc-navy transition">Meet Maggie McDermott →</a>
+    </div>
+  </section>
+
+  <section class="py-20 bg-nlc-teal/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-12" data-aos="fade-up">
+        <p class="text-xs tracking-[0.3em] uppercase text-nlc-teal font-bold mb-3">Client voices</p>
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter">Trusted by operators.</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="flex flex-col bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-2xl transition-all duration-500" data-aos="fade-up">
+          <p class="text-nlc-navy/80 leading-relaxed text-lg pb-6">“My Oneday experience wouldn’t be the same without Maggie as my mentor. She’s so supportive, but always one-, two-, three- steps ahead of the curve with insights and suggestions that had never crossed my mind. All I can say is THANK YOU - my dream is becoming a reality!”</p><div class="mt-auto pt-6 border-t border-gray-100"><p class="font-extrabold tracking-tight text-nlc-navy">Oneday Founder</p><p class="text-sm text-nlc-teal font-semibold">Oneday</p></div>
+        </article>
+        <article class="flex flex-col bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="80">
+          <p class="text-nlc-navy/80 leading-relaxed text-lg pb-6">"Incisive brand building, in conjunction with actionable consumer insights and high-profile strategic partnerships, led us to our first national stage and our first actionable list of prospective investors."</p><div class="mt-auto pt-6 border-t border-gray-100"><p class="font-extrabold tracking-tight text-nlc-navy">Joy Martinello</p><p class="text-sm text-nlc-teal font-semibold">Founder & CEO, Wild Nectar</p></div>
+        </article>
+        <article class="flex flex-col bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="160">
+          <p class="text-nlc-navy/80 leading-relaxed text-lg pb-6">"On an ongoing basis, the brilliant brand platform, business planning, expansion strategies helped us grow, attract real marketplace interest, and ultimately funding."</p><div class="mt-auto pt-6 border-t border-gray-100"><p class="font-extrabold tracking-tight text-nlc-navy">Greg Nalley</p><p class="text-sm text-nlc-teal font-semibold">Founder and Chief Culinary Officer, Nalley Fresh</p></div>
+        </article>
+        <article class="flex flex-col bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="240">
+          <p class="text-nlc-navy/80 leading-relaxed text-lg pb-6">"I had an idea but didn't know how to bring it to reality. Maggie was able to drilldown, focus my vision, and devise a plan so that it became doable – and develop a pitch deck that was well-received by the investment community."</p><div class="mt-auto pt-6 border-t border-gray-100"><p class="font-extrabold tracking-tight text-nlc-navy">Joshua Aare</p><p class="text-sm text-nlc-teal font-semibold">Founder &amp; CEO, DreamBox</p></div>
+        </article>
+        <article class="flex flex-col bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="320">
+          <p class="text-nlc-navy/80 leading-relaxed text-lg pb-6">“Next Level presented eye-opening visions, identified potential strategic partnerships and helped pursue funding opportunities that I’d never even fathomed possible."</p><div class="mt-auto pt-6 border-t border-gray-100"><p class="font-extrabold tracking-tight text-nlc-navy">Monica Westly</p><p class="text-sm text-nlc-teal font-semibold">Founder and CEO, the(sugar)science</p></div>
+        </article>
+        <article class="flex flex-col bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:-translate-y-2 hover:shadow-2xl transition-all duration-500" data-aos="fade-up" data-aos-delay="400">
+          <p class="text-nlc-navy/80 leading-relaxed text-lg pb-6">“The strategic insights and industry knowledge helped us deliver a powerful offering to the investor community.”</p><div class="mt-auto pt-6 border-t border-gray-100"><p class="font-extrabold tracking-tight text-nlc-navy">Tim Lewis</p><p class="text-sm text-nlc-teal font-semibold">Managing Director, Chesapeake Corporate Advisors</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-nlc-navy py-24 px-6 relative overflow-hidden">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-nlc-teal/40 rounded-full blur-[120px] mix-blend-screen pointer-events-none"></div>
+    <div class="relative z-10 bg-white/10 backdrop-blur-xl border border-white/20 max-w-4xl mx-auto rounded-[2.5rem] p-16 text-center shadow-2xl">
+      <h2 class="text-5xl md:text-7xl text-white font-extrabold tracking-tighter">Ready to scale with purpose?</h2>
+      <div class="flex flex-wrap justify-center gap-4 mt-10">
+        <button type="button" onclick="openWhatsAppModal()" class="bg-nlc-orange text-white rounded-full px-8 py-3.5 font-bold hover:opacity-90 shadow-[0_0_20px_rgba(254,153,0,0.4)] transition">Get Started</button>
+        <a href="https://calendly.com/maggie-nextlevelconsulting/30min" target="_blank" rel="noopener" class="inline-flex items-center px-8 py-3.5 rounded-full font-bold text-white border border-white/40 hover:border-nlc-cyan hover:-translate-y-1 transition-all duration-500">Book an Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white border-t border-gray-100 py-8">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <a href="index.html"><img src="assets/NLC Logo.png" alt="Next Level Consulting" class="h-8 w-auto object-contain" /></a>
+      <div class="flex flex-wrap items-center justify-center gap-6 text-sm font-semibold text-nlc-navy/70">
+        <a href="index.html" class="hover:text-nlc-navy">Home</a>
+        <a href="work.html" class="hover:text-nlc-navy">Our Work</a>
+        <a href="services.html" class="hover:text-nlc-navy">Services</a>
+        <a href="about.html" class="hover:text-nlc-navy">About</a>
+        <a href="https://www.linkedin.com/company/next-level-empowering-sustainable-purpose-driven-brands/" target="_blank" rel="noopener" class="hover:text-nlc-navy">LinkedIn</a>
+      </div>
+      <p class="text-xs text-nlc-navy/50">© 2026 Next Level Consulting</p>
+    </div>
+  </footer>
+
+  <div id="whatsapp-modal" class="hidden fixed inset-0 z-[100] bg-nlc-navy/60 backdrop-blur-sm p-6 items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="whatsapp-modal-title" onclick="if (event.target === this) closeWhatsAppModal()">
+    <div class="w-full max-w-lg rounded-3xl border border-white/50 bg-white/80 backdrop-blur-2xl p-8 md:p-10 shadow-2xl">
+      <div class="flex items-start justify-between gap-6 mb-7"><div><p class="text-xs tracking-[0.3em] uppercase text-nlc-orange font-bold mb-3">Let’s connect</p><h2 id="whatsapp-modal-title" class="text-3xl font-extrabold tracking-tighter text-nlc-navy">Tell us what you’re building.</h2></div><button type="button" onclick="closeWhatsAppModal()" class="text-2xl leading-none text-nlc-navy/60 hover:text-nlc-navy" aria-label="Close form">×</button></div>
+      <form id="whatsapp-form" class="space-y-4">
+        <input name="name" required type="text" placeholder="Name" class="w-full rounded-xl border border-gray-200 bg-white/70 px-4 py-3 text-nlc-navy outline-none focus:border-nlc-cyan" />
+        <input name="businessName" required type="text" placeholder="Business Name" class="w-full rounded-xl border border-gray-200 bg-white/70 px-4 py-3 text-nlc-navy outline-none focus:border-nlc-cyan" />
+        <input name="problemSolving" required type="text" placeholder="Problem you are solving" class="w-full rounded-xl border border-gray-200 bg-white/70 px-4 py-3 text-nlc-navy outline-none focus:border-nlc-cyan" />
+        <input name="needHelpWith" required type="text" placeholder="Need help with" class="w-full rounded-xl border border-gray-200 bg-white/70 px-4 py-3 text-nlc-navy outline-none focus:border-nlc-cyan" />
+        <input name="whatsappNumber" required type="text" placeholder="WhatsApp Number" class="w-full rounded-xl border border-gray-200 bg-white/70 px-4 py-3 text-nlc-navy outline-none focus:border-nlc-cyan" />
+        <button type="submit" class="bg-nlc-orange text-white rounded-full px-6 py-3 font-bold hover:opacity-90 transition">Check via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    function openWhatsAppModal() { document.getElementById('whatsapp-modal').classList.remove('hidden'); document.getElementById('whatsapp-modal').classList.add('flex'); }
+    function closeWhatsAppModal() { document.getElementById('whatsapp-modal').classList.add('hidden'); document.getElementById('whatsapp-modal').classList.remove('flex'); }
+    document.getElementById('whatsapp-form').addEventListener('submit', function (event) { event.preventDefault(); const data = new FormData(this); const name = data.get('name'); const businessName = data.get('businessName'); const problem = data.get('problemSolving'); const help = data.get('needHelpWith'); const whatsappNumber = data.get('whatsappNumber'); const message = "Hello Next Level Consulting,\n\nI am " + name + " from " + businessName + ".\n\nThe problem we are solving: " + problem + "\nWhat we need help with: " + help + "\nMy WhatsApp number: " + whatsappNumber + "\n\nLooking forward to connecting!"; window.open('https://wa.me/17036777649?text=' + encodeURIComponent(message), '_blank'); closeWhatsAppModal(); this.reset(); });
+  </script>
+</body>
+</html>
